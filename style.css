@@ -1,0 +1,157 @@
+.colred{
+    box-shadow: 0px 0px 80px red;
+    animation: 3s linear 1s infinite  slide-in  first;
+    
+}
+
+@keyframes first {
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translate(0);
+    }
+    
+}
+
+.colGreen{
+    box-shadow: 0px 0px 80px green;
+    animation: 3s linear 1s infinite  slide-in;
+
+}
+
+
+.modal{
+    position: absolute;
+    top: 38%;
+    right: 35%;
+    
+    transition: -50% -50%;
+    border: 2px solid #ffffff59;
+    width: 500px;
+    scale: 0;
+    background: #000000 ;
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+    padding: 20px 25px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+.active{
+    scale: 1;
+}
+
+.btn_card{
+    background: #ffffffb9;
+    color: #131313;
+}
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffffff88;
+    
+
+}
+.modal h3{
+    display: block;
+    font-size: 1.17rem;
+    font-weight: bold;
+    
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+
+
+}
+
+.modal h1{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.icon{
+    border: 1px solid #ffffff88;
+    padding: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    gap: 10px;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+
+}
+
+.overlay{
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+}
+
+#facebook{
+    color: blue;
+    border: 1px solid blue;
+}
+#facebook:hover{
+    background-color: lightblue ;
+
+}
+
+#twitter:hover{
+    background-color: lightgreen;
+
+}
+#twitter{
+    color: #1c99e6;
+    border: 1px solid #1c99e6;
+}
+
+#instagram{
+    color: pink;
+    border: 1px solid pink;
+}
+#instagram:hover{
+    background-color: red;
+    border: 1px solid red;
+
+}
+
+#whatsaap{
+    color: lightgreen;
+    border: 1px solid lightgreen;
+}
+#whatsaap:hover{
+
+    background-color: green;
+}
+
+#telegram{
+    color: blue;
+    border: 1px solid blue;
+}
+#telegram:hover{
+    background-color: skyblue;
+
+}
+
+.overlayactive{
+    opacity: 1;
+    pointer-events: initial;
+}

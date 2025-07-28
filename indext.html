@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+   
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="overflow-x-hidden relative">
+    <div class="w-[100vw] h-[100vh] bg-blue-500 relative  flex justify-center  ">
+        <div class="bg-red-800  w-[200px] h-[200px] rounded-full absolute left-[400px] top-12 colred  "></div>
+        <div class="bg-green-700  w-[200px] h-[200px] rounded-full absolute right-[400px] bottom-[100px] colGreen"></div>
+        <!--card-->
+        <div class="flex justify-center items-center">
+            <div  class="w-[400px] h-[450px] bg-gray-700 flex flex-col gap-8 justify-center items-center rounded-md z-20">
+                <div class="w-[200px] h-[200px]  ">
+                    <img src="./WhatsApp Image 2025-05-11 at 01.12.02_f7476a3e.jpg" class="rounded-full ">
+                </div>
+                <div>
+                    <h2 class="font-extrabold text-white text-2xl">Praveen Yadav</h2>
+                </div>
+                <div>
+                    <h3 class="text-gray-500 font-bold text-xl">Student, Delhi</h3>
+                </div>
+                <div class="flex gap-x-2 " class="btn_card">
+                    <button onclick="openModal()" class="border-2 text-gray-400 rounded-md px-2 hover:bg-white hover:text-black transition-all delay-100 ease-in duration-200" >
+                        <i class="fa-solid fa-share"></i>Share my Profile
+                    </button>
+                    <button class="border-2 text-gray-400 rounded-md px-2 hover:bg-white hover:text-black">Follow me</button>
+                </div>
+             </div>
+             
+
+        </div>
+        
+    </div>
+    <!--modal -->
+
+    <div class="modal">
+        <div class="modal-header">
+            <h1>See my Profile via</h1>
+            <div onclick="closeModal()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    
+        <div>
+            <h3>Share this via</h3>
+            <div class="icon-container">
+                 <a href="#" class="icon" id="facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="icon" id="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="icon" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="icon" id="whatsaap">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" class="icon" id="telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+
+            </div>
+           
+        </div>
+
+
+    </div>
+
+    <div class="overlay" onclick="closeModal()"></div>
+    <script src="index.js"></script>
+</body>
+</html>
